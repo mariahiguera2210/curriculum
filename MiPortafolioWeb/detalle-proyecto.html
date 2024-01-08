@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle Proyecto Database connection with H2</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Detalle Proyecto Database connection with H2</h1>
+    </header>
+    <main>
+      <p>
+        Este proyecto es un ejemplo de como realizar una conección a base de
+        datos con H2 usando Spring Boot con JPA. El proyecto crea una base de
+        datos de cervezas
+      </p>
+      <ol>
+        <li>Hay que ingresar al link</li>
+        <a href="http://localhost:8080/h2-console" target="_blank"
+          >http://localhost:8080/h2-console</a
+        >
+        <li>Ingresar la contraseña: Password</li>
+        <img src="imagenes/h2.1.png" height="300px" />
+        <li>
+          Abrir postman e ingrsar la siguiente ruta
+          http://localhost:8080/api/v1/beer/beers
+        </li>
+        <li>Se envia la petición como se ve en la imagen</li>
+        <img
+          src="imagenes/postman.jpg"
+          alt="peticion en postman"
+          height="200px"
+        />
+        <li>
+          Luego en el H2 se verifica la creacion de la nueva cerveza en la base
+          de datos
+        </li>
+        <img src="imagenes/h2.jpg" height="200px" />
+      </ol>
+    </main>
+    <a href="../index.html">Volver a mi portafolio</a>
+  </body>
+</html>
