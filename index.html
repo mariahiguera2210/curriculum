@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoja de vida</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
@@ -15,12 +14,18 @@
         <p>Teléfono: +1 123 456 789</p>
         <p>Ubicación: Bogota, Colombia</p>
         <p>
-          <a href="https://github.com/mariahiguera2210" target="_blank" rel="noopener"
+          <a
+            href="https://github.com/mariahiguera2210"
+            target="_blank"
+            rel="noopener"
             >Perfil GitHub</a
           >
         </p>
         <p>
-          <a href="https://www.linkedin.com/in/maria-higuera/" target="_blank" rel="noopener"
+          <a
+            href="https://www.linkedin.com/in/maria-higuera/"
+            target="_blank"
+            rel="noopener"
             >Perfil LinkedIn</a
           >
         </p>
@@ -34,6 +39,8 @@
         <li>2018 - 2019: Agente Servicio al Cliente en Teleperformance</li>
         <li>2016 - 2017: Pasante de Costos en Sauto Andina S.A.S</li>
       </ul>
+      <h2>Certificaciones</h2>
+      <ul id="listaCertificaciones"></ul>
 
       <h2>Habilidades Técnicas</h2>
       <table>
@@ -62,17 +69,26 @@
           <td>Intermedio</td>
         </tr>
       </table>
-      <button id="addSkill">Añadir Habilidad</button>
-  
+      <div class="boton">
+        <button id="addSkill">Añadir Habilidad</button>
+      </div>
+
       <h2>Proyectos</h2>
       <ul class="mis-proyectos">
-        <li> <a href="MiPortafolioWeb/detalle-proyecto.html">Coneccion a base de datos con H2</a></li>
-        <li> Proyecto sistema de citas medicas </li>
-        <li> Otro proyecto </li>
-        <li> Otro proyecto </li>
+        <li>
+          <a href="MiPortafolioWeb/detalle-proyecto.html"
+            >Coneccion a base de datos con H2</a
+          >
+        </li>
+        <li>Proyecto sistema de citas medicas</li>
+        <li>Otro proyecto</li>
+        <li>Otro proyecto</li>
       </ul>
+      <div>
+        <button id="verProyectos">Ver proyectos Anteriores</button>
+      </div>
 
-      <form action="process_form.php" method="post" id="myForm">
+      <form action="#" method="post" id="myForm">
         <label for="email">Email:</label>
         <input type="email" id="email" name="user_email" required />
 
