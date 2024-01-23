@@ -1,4 +1,4 @@
-document.getElementById("addSkill").addEventListener("click", function () {
+ function addHability() {
   let newSkill = prompt("Introduce una nueva habilidad:");
   let level = prompt("Ingrese nivel de la habilidad ");
   if (newSkill) {
@@ -10,11 +10,10 @@ document.getElementById("addSkill").addEventListener("click", function () {
     table.appendChild(habilidad);
     table.appendChild(nivel);
   }
-});
+}
+document.getElementById("addSkill").addEventListener("click", addHability)
 
-document
-  .getElementById("contactar")
-  .addEventListener("click", function (event) {
+ function addContact(event) {
     event.preventDefault();
     const emailValue = document.getElementById("email").value;
     if (emailValue) {
@@ -22,7 +21,8 @@ document
     } else {
       alert("Ingresa email porfavor ");
     }
-  });
+  }
+  document.getElementById("contactar").addEventListener("click",addContact);
 
 const certificaciones = [
   "AWS Certified Cloud Practitioner",
@@ -48,7 +48,7 @@ const listaProyectos = [
   " Hoja de vida"
 ]
 
-document.getElementById("verProyectos").addEventListener("click",function(){
+function showProyects(){
  
   let numero =  parseInt(prompt("Del 1 al 4 cuántos proyectos deseas ver ingresa el número"))
   let show;
@@ -67,4 +67,4 @@ document.getElementById("verProyectos").addEventListener("click",function(){
     return show;
 
   }
-})
+}document.getElementById("verProyectos").addEventListener("click",showProyects)
