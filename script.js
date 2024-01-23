@@ -42,14 +42,15 @@ function mostrarCertificaciones() {
 } window.onload = mostrarCertificaciones;
 
 const listaProyectos = [
-  "Tienda de Barrio", 
+  "Conexion a base de datos H2",
+  " Tienda de Barrio", 
   " Sistema de citas medicas",
   " Hoja de vida"
 ]
 
 document.getElementById("verProyectos").addEventListener("click",function(){
  
-  let numero =  parseInt(prompt("Del 1 al 3 cuántos proyectos deseas ver ingresa el número"))
+  let numero =  parseInt(prompt("Del 1 al 4 cuántos proyectos deseas ver ingresa el número"))
   let show;
   for(let i = 0; i< listaProyectos.length; i++){
     if(numero == 1){
@@ -58,8 +59,10 @@ document.getElementById("verProyectos").addEventListener("click",function(){
       show = alert(listaProyectos.slice(0,2))
     }else if(numero == 3){
       show = alert(listaProyectos)
-    }else if(numero > 3 || numero <= 0){
-      show = alert("Ingresa un numero entre 1 y 3")
+    }else if(numero == 4){
+      show = alert(listaProyectos)
+    }else if(numero > 4 || numero <= 0){
+      show = alert("Ingresa un numero entre 1 y 4")
     }
     return show;
 
